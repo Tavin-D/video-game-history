@@ -1,0 +1,83 @@
+/* Styles the entire page */
+body {
+    background-color: #f2f4f7;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Centers and styles the main headings */
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+/* Styles the smaller headings */
+h2 {
+    text-align: center;
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+/* Adds spacing and makes paragraphs easier to read */
+p {
+    line-height: 1.6;
+    margin: 15px;
+}
+
+/* Styles the header */
+header {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+/* Adds space around the main content */
+main {
+    padding: 20px;
+}
+
+/* Styles the footer */
+footer {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styles the game lists */
+.game-list {
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+}
+
+/* Adds extra spacing to the paragraphs */
+.page-text {
+    margin: 20px;
+}
+
+/* Styles the history section */
+#history-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styles the modern gaming section */
+#modern-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Uses Flexbox to place the lists side by side */
+.list-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Makes both list sections take up equal space */
+.list-container > div {
+    flex: 1;
+}
