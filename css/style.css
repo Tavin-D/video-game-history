@@ -1,17 +1,21 @@
-/* Styles the entire page */
+ /* Styles the entire page */
+
 body {
     background-color: #f2f4f7;
+    color: #222222;
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
 
 /* Centers and styles the main headings */
+
 h1 {
     text-align: center;
     font-size: 36px;
 }
 
 /* Styles the smaller headings */
+
 h2 {
     text-align: center;
     font-size: 28px;
@@ -22,30 +26,49 @@ h3 {
 }
 
 /* Adds spacing and makes paragraphs easier to read */
+
 p {
     line-height: 1.6;
     margin: 15px;
 }
 
 /* Styles the header */
+
 header {
-    background-color: lightblue;
+    background-color: #b7d7e8;
+    color: #222222;
     padding: 20px;
 }
 
 /* Adds space around the main content */
+
 main {
     padding: 20px;
 }
 
+/* Styles the navigation */
+
+nav {
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #0645ad;
+    font-weight: bold;
+}
+
 /* Styles the footer */
+
 footer {
-    background-color: lightgray;
+    background-color: #d6d6d6;
+    color: #222222;
     padding: 20px;
     text-align: center;
 }
 
 /* Styles the game lists */
+
 .game-list {
     background-color: white;
     padding: 20px;
@@ -53,11 +76,13 @@ footer {
 }
 
 /* Adds extra spacing to the paragraphs */
+
 .page-text {
     margin: 20px;
 }
 
 /* Styles the history section */
+
 #history-section {
     background-color: white;
     padding: 20px;
@@ -65,6 +90,7 @@ footer {
 }
 
 /* Styles the modern gaming section */
+
 #modern-section {
     background-color: white;
     padding: 20px;
@@ -72,12 +98,55 @@ footer {
 }
 
 /* Uses Flexbox to place the lists side by side */
+
 .list-container {
     display: flex;
     gap: 20px;
 }
 
 /* Makes both list sections take up equal space */
+
 .list-container > div {
     flex: 1;
+}
+
+/* Makes the image responsive */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjusts the layout for smaller screens */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    #history-section,
+    #modern-section {
+        padding: 10px;
+    }
+
+    .list-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .game-list {
+        margin: 10px 0;
+    }
 }
