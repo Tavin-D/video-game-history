@@ -4,60 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History of Video Games</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- My Custom CSS -->
     <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
-    <!-- Header with the title of the page -->
-    <header>
-        <h1>History of Video Games</h1>
-    </header>
+    <div class="container mt-4">
 
-    <!-- Main content about the history of video games -->
-    <main>
-        <!-- Section about the early history of video games -->
-        <section id="history-section">
-            <h2>The Early History of Video Games</h2>
+        <header class="text-center mb-4">
+            <h1>History of Video Games</h1>
+        </header>
 
-            <p class="page-text">Video games first became popular in the 1970s when arcade games started appearing in public places. One of the most well-known early games was Pong, which helped show how popular video games could become. During the following decades, home consoles allowed people to play games in their own houses. These early developments helped create the video game industry that we have today.</p>
+        <main>
+            <section id="history-section" class="p-4 mb-4 rounded">
 
-            <img src="images/Screenshot 2026-09-20 174452.png" alt="Image showing an early video game" width="500">
+                <h2 class="mb-4">The Early History of Video Games</h2>
 
-            <p class="page-text">As video games became more popular, companies started creating home consoles that allowed people to play games without going to an arcade. Nintendo, Sega, and other companies helped make console gaming a major form of entertainment. Games also became more detailed as technology improved, giving players better graphics, sound, and larger worlds to explore.</p>
+                <p class="page-text mb-4">
+                    Video games first became popular in the 1970s when arcade games started appearing in public places. One of the most well-known early games was Pong, which helped show how popular video games could become. During the following decades, home consoles allowed people to play games in their own houses. These early developments helped create the video game industry that we have today.
+                </p>
 
-            <div class="list-container">
-                <div>
-                    <h3>Some Important Early Video Games</h3>
+                <img 
+                    src="images/Screenshot 2026-09-20 174452.png" 
+                    alt="Image showing an early video game" 
+                    class="img-fluid rounded mx-auto d-block mb-4"
+                >
 
-                    <ul class="game-list">
-                        <li>Pong</li>
-                        <li>Space Invaders</li>
-                        <li>Pac-Man</li>
-                        <li>Donkey Kong</li>
-                    </ul>
+                <p class="page-text mb-4">
+                    As video games became more popular, companies started creating home consoles that allowed people to play games without going to an arcade. Nintendo, Sega, and other companies helped make console gaming a major form of entertainment. Games also became more detailed as technology improved, giving players better graphics, sound, and larger worlds to explore.
+                </p>
+
+                <!-- Bootstrap grid -->
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <h3>Some Important Early Video Games</h3>
+
+                        <ul class="game-list">
+                            <li>Pong</li>
+                            <li>Space Invaders</li>
+                            <li>Pac-Man</li>
+                            <li>Donkey Kong</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3>Major Video Game Consoles</h3>
+
+                        <ol class="game-list">
+                            <li>Atari 2600</li>
+                            <li>Nintendo Entertainment System</li>
+                            <li>PlayStation</li>
+                            <li>Xbox</li>
+                        </ol>
+                    </div>
+
                 </div>
 
-                <div>
-                    <h3>Major Video Game Consoles</h3>
+            </section>
+        </main>
 
-                    <ol class="game-list">
-                        <li>Atari 2600</li>
-                        <li>Nintendo Entertainment System</li>
-                        <li>PlayStation</li>
-                        <li>Xbox</li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-    </main>
+        <nav class="text-center my-4">
+            <a href="page2.html" class="btn btn-primary">
+                Learn about modern gaming
+            </a>
+        </nav>
 
-    <!-- Navigation link to the modern gaming page -->
-    <nav>
-        <a href="page2.html">Learn about modern gaming</a>
-    </nav>
+        <footer class="text-center p-3">
+            <p>History of Video Games Educational Website</p>
+        </footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>History of Video Games Educational Website</p>
-    </footer>
+    </div>
 </body>
 </html>

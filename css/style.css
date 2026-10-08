@@ -1,4 +1,4 @@
-/* Styles the entire page */
+/* Custom styles for the History of Video Games website */
 
 body {
     background-color: #f2f4f7;
@@ -7,17 +7,11 @@ body {
     font-size: 16px;
 }
 
-/* Centers and styles the main headings */
-
 h1 {
-    text-align: center;
     font-size: 36px;
 }
 
-/* Styles the smaller headings */
-
 h2 {
-    text-align: center;
     font-size: 28px;
 }
 
@@ -25,14 +19,9 @@ h3 {
     font-size: 22px;
 }
 
-/* Adds spacing and makes paragraphs easier to read */
-
 p {
     line-height: 1.6;
-    margin: 15px;
 }
-
-/* Styles the header */
 
 header {
     background-color: #b7d7e8;
@@ -40,41 +29,20 @@ header {
     padding: 20px;
 }
 
-/* Adds space around the main content */
-
-main {
-    padding: 20px;
-}
-
-/* Styles the navigation */
-
-nav {
-    padding: 20px;
-    text-align: center;
-}
-
 nav a {
     color: #0645ad;
     font-weight: bold;
 }
-
-/* Makes navigation links easier to see when using a keyboard */
 
 nav a:focus {
     outline: 3px solid #222222;
     outline-offset: 3px;
 }
 
-/* Styles the footer */
-
 footer {
     background-color: #d6d6d6;
     color: #222222;
-    padding: 20px;
-    text-align: center;
 }
-
-/* Styles the game lists */
 
 .game-list {
     background-color: white;
@@ -82,50 +50,19 @@ footer {
     margin: 15px;
 }
 
-/* Adds extra spacing to the paragraphs */
-
 .page-text {
     margin: 20px;
 }
 
-/* Styles the history section */
-
 #history-section {
     background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
 }
-
-/* Styles the modern gaming section */
 
 #modern-section {
     background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
 }
 
-/* Uses Flexbox to place the lists side by side */
-
-.list-container {
-    display: flex;
-    gap: 20px;
-}
-
-/* Makes both list sections take up equal space */
-
-.list-container > div {
-    flex: 1;
-}
-
-/* Makes the image responsive */
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Adjusts the layout for smaller screens */
-
+/* Responsive adjustments for smaller screens */
 @media (max-width: 600px) {
     body {
         font-size: 16px;
@@ -145,12 +82,7 @@ img {
 
     #history-section,
     #modern-section {
-        padding: 10px;
-    }
-
-    .list-container {
-        flex-direction: column;
-        gap: 10px;
+        padding: 10px !important;
     }
 
     .game-list {
@@ -158,8 +90,7 @@ img {
     }
 }
 
-/* Improves spacing on very small screens */
-
+/* Extra adjustments for very small screens */
 @media (max-width: 400px) {
     h1 {
         font-size: 26px;
@@ -177,4 +108,3 @@ img {
         padding: 10px;
     }
 }
-
